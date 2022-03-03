@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteTransparent"
+    android:layout_centerInParent = "true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingVertical="@dimen/_30sdp"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/back_round_gradient_pink_two"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/questLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/light_silver_round_outline_gradient"
+            android:gravity="top"
+            android:hint="Your Question.."
+            android:fontFamily="@font/regular"
+            android:padding="@dimen/_10sdp"
+            android:textColorHint="@color/darker_grey"
+            android:textSize="@dimen/_11sdp" />
+
+        <EditText
+            android:id="@+id/ansLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@id/questLayout"
+            android:background="@drawable/light_silver_round_outline_gradient"
+            android:gravity="top"
+            android:fontFamily="@font/regular"
+            android:hint="Write Answer.."
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColorHint="@color/darker_grey"
+            android:textSize="@dimen/_11sdp" />
+
+        <RelativeLayout
+            android:id="@+id/cancel_add_btn_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ansLayout">
+
+            <RelativeLayout
+                android:id="@+id/cancel_lay"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_toStartOf="@id/Add_lay"
+                android:background="@drawable/back_ground_gradient_pink_outline">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/regular"
+                    android:text="Cancel"
+                    android:textColor="@color/app_pink"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Add_lay"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/profile_pink_round_gradient">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/regular"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:elevation="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pink_book" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:elevation="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/save_black" />
+
+
+        <RelativeLayout
+            android:id="@+id/color_lay"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/light_pink_round_gradient">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/color_lay"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/text_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/medium"
+                android:text="Love Scenes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp" />
+
+            <TextView
+                android:id="@+id/text_side2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_side"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/app_pink"
+                android:fontFamily="@font/medium"
+                android:text="By John ven"
+                android:textSize="@dimen/_5sdp" />
+
+            <TextView
+                android:id="@+id/text_side3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_side2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/medium"
+                android:text="How to spend quality time..."
+                android:singleLine="true"
+                android:textSize="@dimen/_5sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_side3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/back_ground_gradient_pink_outline"
+                android:drawableStart="@drawable/star_custom_icon"
+                android:drawablePadding="@dimen/_6sdp"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:paddingVertical="@dimen/_3sdp"
+                android:text="4.9"
+                android:textSize="@dimen/_8sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

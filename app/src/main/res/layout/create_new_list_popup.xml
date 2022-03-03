@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/whiteTransparent"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/but_full_circle"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_25sdp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:text="@string/create_new_list"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_group_cross" />
+
+        <EditText
+            android:id="@+id/enterQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/light_gray_outline_gradient"
+            android:fontFamily="@font/regular"
+            android:hint="@string/enter_quiz_name"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvTitleSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterQuiz"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/existing_quizes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <!--Existing quiz adapter is created for this recycle-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleExistingQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitleSecond"
+            android:layout_marginVertical="@dimen/_15sdp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/items_repeat_quiz" />
+
+        <TextView
+            android:id="@+id/addNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycleExistingQuiz"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/circular_corner_btn_bg"
+            android:backgroundTint="@color/custom_color_dark"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/add_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

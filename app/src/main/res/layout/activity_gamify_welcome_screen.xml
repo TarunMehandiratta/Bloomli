@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_purple_mix_brown"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/icBack"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/medium"
+            android:text="@string/add_new_note"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"/>
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="@string/welcome_to"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="@string/bloomli_gamify"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/app_pink"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="@string/where_members_quiz_each_other"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_90sdp"
+                    android:background="@drawable/profile_back"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImage"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_pic"
+                        app:civ_border_color="@color/brown_color_two"
+                        app:civ_border_width="@dimen/_3sdp"/>
+
+                    <TextView
+                        style="@style/semiboldText"
+                        android:text="@string/john_ven"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/ic_vs"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_20sdp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_back"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_pic"
+                        app:civ_border_color="@color/brown_color_two"
+                        app:civ_border_width="@dimen/_3sdp"/>
+
+                    <TextView
+                        style="@style/regText"
+                        android:text="@string/john_ven"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:paddingVertical="@dimen/_20sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:backgroundTint="@color/black_brown_color"
+                android:background="@drawable/blackbackground">
+
+                <TextView
+                    android:id="@+id/tvStepOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="Step 1 :"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/app_pink"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvStepOneDes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/stepOneDes"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@+id/tvStepOne"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStepOneDes">
+
+        <RelativeLayout
+            android:id="@+id/quizProfileSec"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/welcome_profile_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/medium"
+                android:text="@string/upload_quiz_profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/ic_btn_border"
+                android:fontFamily="@font/medium"
+                android:gravity="center"
+                android:hint="@string/enter_quiz_name"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/light_greywhite"
+                android:textColorHint="@color/darker_grey"
+                android:textSize="@dimen/_9sdp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/quizProfileSec" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/quizProfileSec"
+            app:layout_constraintEnd_toEndOf="@+id/quizProfileSec"
+            app:layout_constraintBottom_toTopOf="@+id/quizProfileSec"
+            app:layout_constraintTop_toTopOf="@+id/quizProfileSec">
+           <ImageView
+               android:id="@+id/backgroundWhite"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:background="@drawable/grey_back_round"
+               android:layout_width="@dimen/_65sdp"
+               android:layout_height="@dimen/_65sdp"/>
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="@+id/backgroundWhite"
+                app:layout_constraintTop_toTopOf="@+id/backgroundWhite"
+                app:layout_constraintStart_toStartOf="@+id/backgroundWhite"
+                app:layout_constraintEnd_toEndOf="@+id/backgroundWhite"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_question_pf"/>
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ic_image_upload"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_20sdp"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:backgroundTint="@color/black_brown_color"
+                android:background="@drawable/blackbackground">
+
+                <TextView
+                    android:id="@+id/tvStepTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="Step 2:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/app_pink"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvStepTwoHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/stepTwoHead"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@+id/tvStepTwo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp" />
+
+
+                <ImageView
+                    android:id="@+id/dotImage"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/pink_circular_dot"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStepTwoHead"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvStepTwoDes"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/stepTwoDes"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@+id/dotImage"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStepTwoHead"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStepTwoDes">
+
+                    <TextView
+                        android:id="@+id/takeQuiz"
+                        style="@style/regText"
+                        android:text="@string/take_quiz"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/toggle_on"/>
+
+                    <TextView
+                        android:id="@+id/submitQuiz"
+                        style="@style/regText"
+                        android:text="@string/submit_quiz"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@drawable/toggle_on"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

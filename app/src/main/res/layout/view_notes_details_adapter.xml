@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/light_silver_round_gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_textt"
+            android:text="Exiting Line"
+            android:textColor="@color/app_pink"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/medium"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/cancle_pink_outline_icon"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/cancle_pink_outline_icon"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/edit_pen_round_pink_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/cancle_pink_outline_icon"
+            android:src="@drawable/edit_pen_round_pink_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_textt"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/regular"
+            android:text="when she'dfirst come back, it hadn't been so much a choice as a necessity, the demand of days, that started early and streched long,when she'dfirst come back, it hadn't been so much a choice as a necessity, the demand of days, that started early and streched long,when she'dfirst come back, it hadn't been so much a choice as a necessity,"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_145sdp"
+    android:id="@+id/book_of_the_day_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_125sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/back_gamify">
+
+
+            <TextView
+                android:id="@+id/text_book_of_the_day"
+                style="@style/mediumText"
+                android:layout_marginStart="@dimen/_110sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Twice Shy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/text_book_of_the_day_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/back_ground_gradient_pink_outline"
+                android:drawableStart="@drawable/ic_selected_rate_view"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_3sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:text="4.9"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:layout_marginTop="@dimen/_45sdp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                app:civ_border_color="@color/white_opacity"
+                app:civ_border_width="@dimen/_1sdp"
+                android:src="@drawable/no_path"/>
+
+            <TextView
+                android:id="@+id/text_book_of_the_day_2"
+                style="@style/mediumText"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Summary Quiz"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+        </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView_you_may_like"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/_10sdp"
+        android:src="@drawable/book_purple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

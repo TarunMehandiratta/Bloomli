@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:id="@+id/constraint_lay_clickable_you_may_like"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/pink_round_with_20"
+        android:backgroundTint="@color/app_pink_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/medium"
+            android:text="Twice Shy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_rate"
+            style="@style/mediumText"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/back_ground_gradient_pink_outline"
+            android:drawableStart="@drawable/ic_selected_rate_view"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:text="4.9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_book_of_the_day"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/regular"
+            android:text="By John ven"
+            android:textColor="@color/app_pink"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_book_of_the_day_2"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/regular"
+            android:singleLine="true"
+            android:text="How to spnd quality time with friends.."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_3"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:fontFamily="@font/regular"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/text_book_of_the_day_desc"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/back_ground_gradient_pink"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:text="Listen"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_4"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_180sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/text_book_of_the_day_desc"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/back_ground_gradient_black"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:text="Read"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView_you_may_like"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/_10sdp"
+        android:src="@drawable/yellow_book"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/book_mark_icon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:elevation="@dimen/_20sdp"
+        android:src="@drawable/save_black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_you_may_like"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

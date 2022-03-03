@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_440sdp"
+        android:background="@drawable/popup_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCongo"
+            style="@style/regText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:text="@string/congratulations"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_below="@+id/tvCongo"
+            android:layout_marginVertical="@dimen/_13sdp"
+            android:src="@drawable/stars_back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@+id/tvCongo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/dummyimage" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/regText"
+            android:layout_below="@+id/profilePic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="John viky"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvCompleted"
+            style="@style/regText"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/you_ve_completed_the"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvThatComplete"
+            style="@style/semiboldText"
+            android:layout_below="@+id/tvCompleted"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/love_at_first"
+            android:textColor="@color/dark_pink"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/scoreSec"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvThatComplete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:background="@drawable/but_full_circle"
+            android:orientation="horizontal"
+            android:padding="@dimen/_18sdp">
+
+            <TextView
+                style="@style/semiboldText"
+                android:text="@string/your_score"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                style="@style/boldText"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="45/60"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@+id/scoreSec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/bloomli" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainSection">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/but_full_circle"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/regText"
+            android:drawableStart="@drawable/ic_baseline_thumb_up_24"
+            android:drawablePadding="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_18sdp"
+            android:text="@string/done"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/but_full_circle"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/regText"
+            android:text="@string/share"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingVertical="@dimen/_18sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
+            android:drawableStart="@drawable/ic_share"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

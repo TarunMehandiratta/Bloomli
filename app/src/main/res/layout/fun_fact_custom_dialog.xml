@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteTransparent"
+    android:layout_centerInParent = "true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circular_solid_bg_white"/>
+
+        <RelativeLayout
+            android:id="@+id/midSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:background="@drawable/but_full_circle">
+
+            <ImageView
+                android:id="@+id/bulbImage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/funimg" />
+
+        <TextView
+            android:id="@+id/create_new_quiz_tittle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bulbImage"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/medium"
+            android:text="@string/fun_fact_des"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/doneTimeBut"
+                style="@style/regText"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/create_new_quiz_tittle_text"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/but_full_circle"
+                android:backgroundTint="@color/app_pink"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

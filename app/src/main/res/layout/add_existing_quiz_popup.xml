@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pink_round_gradient_two">
+
+    <TextView
+        android:id="@+id/select_quiz_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/semibold"
+        android:text="Select The Quiz"
+        android:textColor="@color/dark_purple_mix_brown"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_2sdp"
+        android:id="@+id/view"
+        android:background="@color/app_pink"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/select_quiz_text"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"/>
+
+    <RelativeLayout
+        android:id="@+id/mission_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/view"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/regular"
+            android:text="Mission Complete Quiz"
+            android:textColor="@color/dark_purple_mix_brown"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/summery_lay"
+        android:layout_below="@+id/mission_lay"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/regular"
+            android:text="Summery Quiz"
+            android:textColor="@color/dark_purple_mix_brown"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/build_lay"
+        android:layout_below="@+id/summery_lay"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="@drawable/mix_brown_round_gradient"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/regular"
+            android:text="Build Confidence"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

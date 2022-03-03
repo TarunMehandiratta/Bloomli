@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/message_screen_screen_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_25sdp">
+
+            <ImageView
+                android:id="@+id/edit_profile_back_icon"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/edit_profile_search_icon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_toStartOf="@+id/edit_profile_bell_icon"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/edit_profile_bell_icon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/black_bell" />
+
+            <TextView
+                android:id="@+id/edit_profile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/medium"
+                android:text="Messages"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_screen_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_screen_screen_lay"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:overScrollMode="never" />
+
+    </RelativeLayout>
+

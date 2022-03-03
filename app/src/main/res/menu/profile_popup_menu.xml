@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit_profile_text"
+        android:title="Edit Profile"/>
+    <item
+        android:id="@+id/message_text"
+        android:title="Message"/>
+
+    <item
+        android:id="@+id/feedback_text"
+        android:title="Feedback"/>
+
+    <item
+        android:id="@+id/contact_us_text"
+        android:title="Contact Us"/>
+
+    <item
+        android:id="@+id/logout_text"
+        android:title="Logout"/>
+
+
+</menu>

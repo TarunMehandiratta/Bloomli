@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_unselected"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_discover"
+        android:icon="@drawable/ic_discover_unselected"
+        android:title="Discover" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_library"-->
+<!--        android:icon="@drawable/ic_library_unselected"-->
+<!--        android:title="Library" />-->
+    <item
+        android:id="@+id/navigation_quiz"
+        android:icon="@drawable/ic_quiz_unselected"
+        android:title="Quiz" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_unselected"
+        android:title="Profile" />
+</menu>

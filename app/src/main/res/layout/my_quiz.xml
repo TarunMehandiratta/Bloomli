@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:id="@+id/my_quizz_lay"
+        android:background="@drawable/light_silver_round_gradient"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/quiz_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/medium"
+            android:paddingEnd="@dimen/_15sdp"
+            android:singleLine="true"
+            android:text="Mission Complete Quiz"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/quiz_tittle_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quiz_tittle"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/regular"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="16 Questions"
+            android:textSize="@dimen/_8sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

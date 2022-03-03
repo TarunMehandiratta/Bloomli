@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_12sdp"
+    android:id="@+id/mainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_152sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/_3sdp"
+        android:id="@+id/borderViewLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:src="@drawable/avatar_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/dark_pink_back"/>
+
+    <ImageView
+        android:id="@+id/videoIcon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_video"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:layout_constraintBottom_toBottomOf="@+id/mainImage"
+        app:layout_constraintStart_toStartOf="@+id/mainImage"
+        app:layout_constraintEnd_toEndOf="@id/mainImage"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/white_circle_back"/>
+
+
+    <TextView
+        style="@style/regText"
+        android:text="@string/zara"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        android:textColor="@color/black"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

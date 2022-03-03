@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_15sdp"
+    android:background="@drawable/blackbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/quesSection"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            style="@style/mediumText"
+            android:text="Q: 1"
+            android:layout_weight="1"
+            android:layout_width="@dimen/_45sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:backgroundTint="@color/app_pink"
+            android:background="@drawable/blackbackground"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            style="@style/regText"
+            android:text="@string/dummy_Ques"
+            android:layout_weight="4"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/three_dots"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        tools:listitem="@layout/itmes_radio_button"/>
+
+</LinearLayout>

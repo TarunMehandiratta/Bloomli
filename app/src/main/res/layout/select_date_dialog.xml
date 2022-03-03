@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteTransparent"
+    android:layout_centerInParent = "true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/but_full_circle"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_25sdp">
+
+        <TextView
+            android:id="@+id/create_new_quiz_tittle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/medium"
+            android:text="@string/select_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_cncle_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@drawable/ic_group_2107" />
+
+        <LinearLayout
+            android:id="@+id/cal_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp">
+
+            <CalendarView
+                android:id="@+id/calenderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:unfocusedMonthDateColor="@color/black"
+                android:weekNumberColor="@color/app_pink"
+                android:focusedMonthDateColor="@color/app_pink"
+                android:selectedWeekBackgroundColor="@color/app_pink"
+                android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/doneBut"
+            style="@style/regText"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/cal_sec"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/but_full_circle"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

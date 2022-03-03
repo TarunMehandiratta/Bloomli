@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:state_focused="true"
+        android:drawable="@drawable/check_c_50" />
+    <item android:state_checked="false" android:state_focused="true"
+        android:drawable="@drawable/unchecked" />
+    <item android:state_checked="false"
+        android:drawable="@drawable/unchecked" />
+    <item android:state_checked="true"
+        android:drawable="@drawable/check_c_50" />
+</selector>

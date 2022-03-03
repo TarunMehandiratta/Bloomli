@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:cardBackgroundColor="@color/app_pink_light"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Twice Shy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/back_ground_gradient_pink_outline"
+            android:drawableStart="@drawable/ic_selected_rate_view"
+            android:drawablePadding="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:text="4.9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/app_pink"
+            android:text="By John ven"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:text="How to spend quality time with friends.."
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_3"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_112sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/back_ground_gradient_pink"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="Listen"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/text_book_of_the_day_4"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_180sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/back_ground_gradient_black"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="Read"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView_you_may_like"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/_10sdp"
+        android:src="@drawable/yellow_book"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/book_mark_icon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:elevation="@dimen/_20sdp"
+        android:src="@drawable/add_book_mark"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_you_may_like"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

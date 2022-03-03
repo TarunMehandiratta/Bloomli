@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BookOfTheDayReadScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/read_screen_top_lay">
+
+        <ImageView
+            android:id="@+id/read_screen_back_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:id="@+id/read_screen_half_moon_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/half_moon_dark"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:id="@+id/read_screen_search_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/read_screen_half_moon_icon"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/search_icon"/>
+
+        <ImageView
+            android:id="@+id/read_screen_head_phone_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/read_screen_search_icon"
+            android:src="@drawable/pink_head_phone_icon" />
+
+        <ImageView
+            android:id="@+id/read_screen_pink_hint_icon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/read_screen_head_phone_icon"
+            android:src="@drawable/pink_hint_icon" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/read_screen_top_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/read_screen_chapter_text"
+            android:text="Chapter"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/regular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/read_screen_chapter_desc_text"
+            android:layout_below="@+id/read_screen_chapter_text"
+            android:text="Signs &amp; Relations"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/read_screen_recycler"
+            android:layout_below="@+id/read_screen_chapter_desc_text">
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

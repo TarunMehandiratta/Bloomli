@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewNotesDetailsScreen">
+
+    <ImageView
+        android:id="@+id/view_notes_back_icon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/ic_back" />
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:id="@+id/book_view_note"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_toEndOf="@+id/view_notes_back_icon"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/yellow_book"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_notes_title"
+        android:text="Twice Shy"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_toEndOf="@+id/book_view_note"
+        android:layout_marginStart="@dimen/_20sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_notes_title2"
+        android:text="Notes"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/app_pink"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_toEndOf="@+id/view_notes_title"
+        android:layout_marginStart="@dimen/_3sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_notes_desc"
+        android:text="Book Author: "
+        android:textSize="@dimen/_8sdp"
+        android:layout_below="@+id/view_notes_title"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/silver"
+        android:layout_toEndOf="@+id/book_view_note"
+        android:layout_marginStart="@dimen/_20sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_notes_desc2"
+        android:text="John ven"
+        android:textSize="@dimen/_8sdp"
+        android:layout_below="@+id/view_notes_title"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/view_notes_desc" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/light_pink_round_gradient"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/pink_outline_lay"
+        android:layout_toEndOf="@+id/book_view_note"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@+id/view_notes_desc2">
+
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/medium"
+            android:text="Total Notes : 12"
+            android:textColor="@color/app_pink"
+            android:textSize="@dimen/_7sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:id="@+id/view_notes_lay_linear"
+        android:orientation="horizontal"
+        android:layout_below="@+id/book_view_note"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/intro_lay"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/linear_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/medium"
+                    android:text="Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:id="@+id/linear_one_view"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_below="@+id/linear_one"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/black_round_gradient" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/blooms_lay"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/linear_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:text="Blooms"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:id="@+id/linear_one_view2"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:visibility="invisible"
+                    android:layout_below="@+id/linear_two"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/black_round_gradient" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/conclusion_lay"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/linear_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:text="Conclusion"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    android:id="@+id/linear_one_view3"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_below="@+id/linear_three"
+                    android:background="@drawable/black_round_gradient"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_rela"
+        android:layout_below="@+id/view_notes_lay_linear"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/pink_outline_lay_plus"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/back_ground_gradient_pink_outline">
+
+            <ImageView
+                android:id="@+id/plus_pink_roung"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/plus_pink_roung" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/plus_pink_roung"
+                android:fontFamily="@font/medium"
+                android:text="Add New note"
+                android:textColor="@color/app_pink"
+                android:textSize="@dimen/_9sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pink_fill_lay_plus"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/pink_outline_lay_plus"
+            android:background="@drawable/profile_pink_round_gradient">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/medium"
+                android:text="Create Quiz"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_note_details_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_rela"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_note_details_recycler2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_below="@+id/lay_rela"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_note_details_recycler3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_below="@+id/lay_rela"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
